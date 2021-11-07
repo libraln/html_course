@@ -1,0 +1,143 @@
+*{
+	box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+}
+
+body{
+    width: 700px;
+    margin:0 auto;
+}
+.header{
+    padding: 20px 0;
+} 
+
+.header__logo{
+    font-size:20px;
+    width: 150px;
+    align-self: end;
+    float:left;
+}
+
+.menu{
+    float:right;
+    margin: 0;
+    padding:0;
+
+}
+.menu li{
+    list-style-type: none;
+    float:left;
+
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+    padding:0 10px;
+    font-size: 16px;
+    
+}
+
+li a:hover{
+    color: #00CC99;
+}
+.caption{
+    text-align:center ;
+}
+.caption::after,
+h3::after{
+    display:block;
+    width:100px;
+    height:3px;
+    background-color: #00CC99 ;
+    content:'';
+    
+}
+.caption::after{
+    margin: 0 auto;
+}
+h3::after{
+    margin: 0 ;
+}
+.card__container{
+    /* display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between; */
+}
+.product__card{
+    float:left;
+    display:flex;
+    flex-direction: column;
+    width: 160px;
+    height:205px;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+.product__card:not(:nth-child(4n)){
+    margin-right: 20px ;
+}
+
+.product__card:hover{
+    cursor: pointer;
+}
+.product__card:hover .product__card__header
+{
+        background-color: #00CC99;
+}
+
+.product__card:hover .product__card__price {
+
+        background-color: #00FFCC; 
+    }
+.product_card__img{
+    width:160px;
+    height:180px;
+    margin-bottom: 0px;
+
+}
+.product__card__header{
+    width: 160px;
+    height:25px;
+    line-height: 25px;
+    background-color: #333333;
+    color: white;
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+}
+.product__card__price{
+    width:30px;
+    height:25px;
+    background-color: grey;
+}
+
+.news__card{
+    float:left;
+    width:200px;
+    height:440px;
+}
+.news__card:not(:nth-child(3n)){
+    margin-right:50px ;
+}
+.news__card__img{
+    width:200px;
+    height:150px;
+}
+.news__description{
+    font-size: 12px;
+}
+
+.news__card__btn{
+    background-color:#00CC99 ;
+    color: #fff;
+    border:none;
+    padding:10px;
+    text-decoration:none;
+}
+.clearfix::after{
+    display:table;
+    content:'';
+    clear:both;
+}
